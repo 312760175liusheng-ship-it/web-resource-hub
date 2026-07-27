@@ -3,147 +3,163 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="柳生公开网页版工具与资料总集合：当前项目、计算工具、知识手册、历史餐饮项目和资讯页面。">
-  <meta name="theme-color" content="#15202b">
-  <title>柳生网页工具与资料中心</title>
+  <meta name="description" content="柳生工作台：快速进入当前牛腩饭项目、餐饮计算、选址调研、公开工具与历史资料。">
+  <meta name="theme-color" content="#142128">
+  <title>柳生工作台｜网页工具与资料</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip" href="#resources">跳到资源</a>
+  <a class="skip" href="#main">跳到主要内容</a>
   <header>
-    <a class="brand" href="./"><span>柳</span>网页工具与资料中心</a>
-    <div class="header-note">公开导航 · 私人资料未收录</div>
+    <a class="brand" href="./"><span>柳</span><div><strong>柳生工作台</strong><small>网页工具与资料</small></div></a>
+    <button class="search-toggle" type="button" aria-label="打开搜索" aria-controls="search-panel">⌕</button>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">LIUSHENG · WEB RESOURCE LIBRARY</p>
-        <h1>散落的网页，<br><em>收回一个入口。</em></h1>
-        <p>当前项目、计算工具、运营资料和历史项目分开保存。先看状态，再决定能不能用于今天的判断。</p>
+  <main id="main">
+    <section class="welcome">
+      <div>
+        <p class="eyebrow">今天要推进什么？</p>
+        <h1>直接进入任务，<br>不用先翻资料。</h1>
       </div>
-      <div class="hero-stat">
-        <strong>10</strong><span>个公开入口</span>
-        <small>另有2组敏感历史页面未加入公开导航</small>
+      <div class="status">
+        <i></i>
+        <div><strong>当前主线：第一锅牛腩底盘</strong><span>项目仍在产品研发期，不提前开店和选址。</span></div>
       </div>
     </section>
 
-    <section class="principle">
-      <div><b>当前</b><span>正在推进，可以继续使用</span></div>
-      <div><b>通用</b><span>跨项目复用，但要填真实数据</span></div>
-      <div><b>历史</b><span>只作证据和方法复盘</span></div>
+    <section class="task-grid" aria-label="主要任务入口">
+      <a class="task primary" href="https://312760175liusheng-ship-it.github.io/guangshi-beef-brisket-rice-guide/#current" data-track="继续牛腩饭项目">
+        <span class="task-icon">01</span><div><strong>继续牛腩饭项目</strong><small>查看当前动作与验证路线</small></div><b>→</b>
+      </a>
+      <a class="task" href="https://312760175liusheng-ship-it.github.io/restaurant-calculator-hub/" data-track="计算餐饮生意">
+        <span class="task-icon">02</span><div><strong>计算餐饮生意</strong><small>成本、外卖、保本与投资</small></div><b>→</b>
+      </a>
+      <a class="task" href="https://312760175liusheng-ship-it.github.io/guangshi-beef-brisket-rice-guide/survey.html" data-track="选址与市场调研">
+        <span class="task-icon">03</span><div><strong>选址与市场调研</strong><small>人流、容量与订单压力</small></div><b>→</b>
+      </a>
+      <a class="task" href="#history">
+        <span class="task-icon">04</span><div><strong>查历史资料</strong><small>旧项目只作证据和复盘</small></div><b>↓</b>
+      </a>
     </section>
 
-    <section class="resources" id="resources">
+    <section class="search-panel" id="search-panel">
+      <label for="search"><span>搜索全部公开资料</span>
+        <input id="search" type="search" placeholder="例如：牛腩、外卖、保本、七盒湘" autocomplete="off">
+      </label>
+      <button id="clear-search" type="button" hidden>清除</button>
+    </section>
+
+    <section class="quick">
       <div class="section-head">
-        <div><p class="eyebrow">RESOURCE INDEX</p><h2>所有公开网页版</h2></div>
-        <div class="filters" role="group" aria-label="资源分类筛选">
-          <button class="active" data-filter="all">全部</button>
+        <div><p class="eyebrow">CURRENT SHORTCUTS</p><h2>当前最常用</h2></div>
+        <a href="#all-resources">查看全部</a>
+      </div>
+      <div class="quick-grid">
+        <article class="quick-card">
+          <span>项目</span><h3>牛腩饭项目说明书</h3><p>完整逻辑、验证门与当前研发路线。</p>
+          <a href="https://312760175liusheng-ship-it.github.io/guangshi-beef-brisket-rice-guide/" data-track="牛腩饭项目说明书">打开 <b>↗</b></a>
+        </article>
+        <article class="quick-card">
+          <span>算账</span><h3>牛腩饭盈利计算器</h3><p>标准份出现后计算成本、利润和保本。</p>
+          <a href="https://312760175liusheng-ship-it.github.io/beef-brisket-rice-calculator/" data-track="牛腩饭盈利计算器">打开 <b>↗</b></a>
+        </article>
+        <article class="quick-card">
+          <span>工具</span><h3>餐饮计算工具中心</h3><p>7个计算器按使用阶段统一归类。</p>
+          <a href="https://312760175liusheng-ship-it.github.io/restaurant-calculator-hub/" data-track="餐饮计算工具中心">打开 <b>↗</b></a>
+        </article>
+        <article class="quick-card">
+          <span>现场</span><h3>市场调研工具</h3><p>人口、人流、门店漏斗和订单压力。</p>
+          <a href="https://312760175liusheng-ship-it.github.io/guangshi-beef-brisket-rice-guide/survey.html" data-track="市场调研工具">打开 <b>↗</b></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="personal" id="personal">
+      <div class="personal-block">
+        <div class="section-head compact"><div><p class="eyebrow">PINNED</p><h2>我的收藏</h2></div></div>
+        <div id="favorites" class="mini-list"><p class="placeholder">在下方资料卡点击☆，常用入口会出现在这里。</p></div>
+      </div>
+      <div class="personal-block">
+        <div class="section-head compact"><div><p class="eyebrow">RECENT</p><h2>最近打开</h2></div></div>
+        <div id="recent" class="mini-list"><p class="placeholder">打开过的资料会保存在这台设备上。</p></div>
+      </div>
+    </section>
+
+    <section class="resources" id="all-resources">
+      <div class="section-head">
+        <div><p class="eyebrow">ALL RESOURCES</p><h2>全部公开资料</h2></div>
+        <div class="filters" role="group" aria-label="资料分类筛选">
+          <button class="active" data-filter="active">当前与通用</button>
+          <button data-filter="all">全部</button>
           <button data-filter="current">当前主线</button>
           <button data-filter="tool">通用工具</button>
           <button data-filter="history">历史资料</button>
         </div>
       </div>
 
-      <div class="grid">
-        <article class="card primary" data-category="current">
-          <div class="meta"><span class="tag current">当前主线</span><span>01</span></div>
-          <h3>广式柱候萝卜牛腩饭</h3>
-          <p>项目说明书、方法校正、原文学习档案与现场调研工具。当前餐饮产品研发的正式入口。</p>
-          <ul><li>当前状态：第一锅牛腩底盘</li><li>不是已验证商业项目</li></ul>
-          <a href="https://312760175liusheng-ship-it.github.io/guangshi-beef-brisket-rice-guide/">打开项目说明书 <b>↗</b></a>
+      <div class="resource-grid">
+        <article class="resource-card" data-category="current" data-name="广式柱候萝卜牛腩饭项目说明书" data-keywords="牛腩 柱候 第一锅 产品 研发 视频 原文">
+          <div class="meta"><span class="tag current">当前主线</span><button class="favorite" type="button" aria-label="收藏广式柱候萝卜牛腩饭项目说明书">☆</button></div>
+          <h3>广式柱候萝卜牛腩饭</h3><p>项目说明书、研发路线、方法校正、原文档案与调研工具。</p>
+          <a href="https://312760175liusheng-ship-it.github.io/guangshi-beef-brisket-rice-guide/" data-track="广式柱候萝卜牛腩饭">打开 <b>↗</b></a>
+        </article>
+        <article class="resource-card" data-category="current" data-name="牛腩饭盈利计算器" data-keywords="牛腩 成本 利润 保本 堂食 外卖 分红">
+          <div class="meta"><span class="tag current">当前工具</span><button class="favorite" type="button" aria-label="收藏牛腩饭盈利计算器">☆</button></div>
+          <h3>牛腩饭盈利计算器</h3><p>产品成本、渠道贡献、混合订单、月利润与股东收益。</p>
+          <a href="https://312760175liusheng-ship-it.github.io/beef-brisket-rice-calculator/" data-track="牛腩饭盈利计算器">打开 <b>↗</b></a>
+        </article>
+        <article class="resource-card" data-category="current" data-name="餐饮计算工具中心" data-keywords="餐饮 计算器 外卖 选址 ROI 投资 保本">
+          <div class="meta"><span class="tag current">当前工具</span><button class="favorite" type="button" aria-label="收藏餐饮计算工具中心">☆</button></div>
+          <h3>餐饮计算工具中心</h3><p>产品、外卖、选址、经营与投资计算器的分类入口。</p>
+          <a href="https://312760175liusheng-ship-it.github.io/restaurant-calculator-hub/" data-track="餐饮计算工具中心">打开 <b>↗</b></a>
+        </article>
+        <article class="resource-card" data-category="tool" data-name="店铺投资回报计算器" data-keywords="店铺 餐饮 投资 ROI 回报 折旧 合伙">
+          <div class="meta"><span class="tag tool">通用工具</span><button class="favorite" type="button" aria-label="收藏店铺投资回报计算器">☆</button></div>
+          <h3>店铺投资回报计算器</h3><p>通用店铺与餐饮专版，计算投资、折旧、净利润和保本点。</p>
+          <a href="https://312760175liusheng-ship-it.github.io/store-roi-calculator/" data-track="店铺投资回报计算器">打开 <b>↗</b></a>
+        </article>
+        <article class="resource-card" data-category="tool" data-name="每日资讯看板" data-keywords="新闻 资讯 每日 看板">
+          <div class="meta"><span class="tag tool">通用资料</span><button class="favorite" type="button" aria-label="收藏每日资讯看板">☆</button></div>
+          <h3>每日资讯看板</h3><p>浏览已生成资讯；使用前需要查看页面日期与时效。</p>
+          <a href="https://312760175liusheng-ship-it.github.io/news-board/" data-track="每日资讯看板">打开 <b>↗</b></a>
         </article>
 
-        <article class="card primary" data-category="current">
-          <div class="meta"><span class="tag current">当前主线</span><span>02</span></div>
-          <h3>牛腩饭盈利计算器</h3>
-          <p>熟牛腩成本、堂食/外卖贡献、混合订单、保本单量、月利润、股东工资与分红。</p>
-          <ul><li>当前工具可用</li><li>参数仍待产品实测</li></ul>
-          <a href="https://312760175liusheng-ship-it.github.io/beef-brisket-rice-calculator/">打开计算器 <b>↗</b></a>
+        <article class="resource-card historical" id="history" data-category="history" data-name="沙茶牛腩饭MVP计划书" data-keywords="沙茶 牛腩 历史 MVP 配方">
+          <div class="meta"><span class="tag history">历史路线</span><button class="favorite" type="button" aria-label="收藏沙茶牛腩饭MVP计划书">☆</button></div>
+          <h3>沙茶牛腩饭MVP计划书</h3><p>早期产品路线，当前已由广式柱候牛腩饭替代。</p>
+          <a href="https://312760175liusheng-ship-it.github.io/shacha-beef-brisket-mvp/" data-track="沙茶牛腩饭MVP计划书">查看 <b>↗</b></a>
         </article>
-
-        <article class="card primary" data-category="current">
-          <div class="meta"><span class="tag current">当前主线</span><span>03</span></div>
-          <h3>餐饮计算工具中心</h3>
-          <p>统一归类产品盈利、外卖单笔、选址容量、门店经营、投资回报和历史模型。</p>
-          <ul><li>共7个计算入口</li><li>按使用阶段筛选</li></ul>
-          <a href="https://312760175liusheng-ship-it.github.io/restaurant-calculator-hub/">打开工具中心 <b>↗</b></a>
+        <article class="resource-card historical" data-category="history" data-name="净菜炒菜机快餐利润计算器" data-keywords="净菜 炒菜机 快餐 利润 合伙 历史">
+          <div class="meta"><span class="tag history">历史模型</span><button class="favorite" type="button" aria-label="收藏净菜炒菜机快餐利润计算器">☆</button></div>
+          <h3>净菜炒菜机快餐利润</h3><p>保留多渠道拆账、保本和合伙分配方法。</p>
+          <a href="https://312760175liusheng-ship-it.github.io/jingcai-calculator/" data-track="净菜炒菜机快餐利润">查看 <b>↗</b></a>
         </article>
-
-        <article class="card" data-category="tool">
-          <div class="meta"><span class="tag tool">通用工具</span><span>04</span></div>
-          <h3>店铺投资回报计算器</h3>
-          <p>通用店铺版与餐饮专版，计算投资、折旧、净利润、保本点、年化回报和合伙收益。</p>
-          <ul><li>适合方案比较</li><li>预计营业额是最大风险</li></ul>
-          <a href="https://312760175liusheng-ship-it.github.io/store-roi-calculator/">打开投资计算器 <b>↗</b></a>
+        <article class="resource-card historical" data-category="history" data-name="七盒湘资料总台" data-keywords="七盒湘 加盟 广告 竞品 尽调 开业 短视频 总部">
+          <div class="meta"><span class="tag history">历史资料</span><button class="favorite" type="button" aria-label="收藏七盒湘资料总台">☆</button></div>
+          <h3>七盒湘资料总台</h3><p>加盟研究、竞品、开业、短视频与总部扶持资料。</p>
+          <a href="https://312760175liusheng-ship-it.github.io/qihexiang-toolbox/" data-track="七盒湘资料总台">查看 <b>↗</b></a>
         </article>
-
-        <article class="card" data-category="tool">
-          <div class="meta"><span class="tag tool">通用资料</span><span>05</span></div>
-          <h3>每日资讯看板</h3>
-          <p>已生成的资讯内容浏览页面。页面可访问不代表后台仍在持续自动更新。</p>
-          <ul><li>使用前先看发布日期</li><li>内容时效需重新核验</li></ul>
-          <a href="https://312760175liusheng-ship-it.github.io/news-board/">打开资讯看板 <b>↗</b></a>
+        <article class="resource-card historical" data-category="history" data-name="七盒湘总部运营手册" data-keywords="七盒湘 总部 运营 手册 培训 SOP">
+          <div class="meta"><span class="tag history">历史手册</span><button class="favorite" type="button" aria-label="收藏七盒湘总部运营手册">☆</button></div>
+          <h3>七盒湘总部运营手册</h3><p>历史运营资料的手机知识库，不再作为当前执行手册。</p>
+          <a href="https://312760175liusheng-ship-it.github.io/qihex-ops-manual/" data-track="七盒湘总部运营手册">查看 <b>↗</b></a>
         </article>
-
-        <article class="card historical" data-category="history">
-          <div class="meta"><span class="tag history">历史路线</span><span>06</span></div>
-          <h3>沙茶牛腩饭MVP计划书</h3>
-          <p>早期沙茶牛腩饭产品路线。当前已经由广式柱候萝卜牛腩饭替代。</p>
-          <ul><li>保留研发方法</li><li>不作为当前配方和交接</li></ul>
-          <a href="https://312760175liusheng-ship-it.github.io/shacha-beef-brisket-mvp/">查看历史计划 <b>↗</b></a>
-        </article>
-
-        <article class="card historical" data-category="history">
-          <div class="meta"><span class="tag history">历史模型</span><span>07</span></div>
-          <h3>净菜炒菜机快餐利润</h3>
-          <p>净菜零售、堂食与外卖混合模型，保留多渠道拆账、回本和合伙分配方法。</p>
-          <ul><li>项目已经退出</li><li>默认参数已经过期</li></ul>
-          <a href="https://312760175liusheng-ship-it.github.io/jingcai-calculator/">查看历史计算器 <b>↗</b></a>
-        </article>
-
-        <article class="card historical" data-category="history">
-          <div class="meta"><span class="tag history">历史资料</span><span>08</span></div>
-          <h3>七盒湘资料总台</h3>
-          <p>广告话术、竞品、加盟尽调、模式优劣、开业手册、短视频和总部扶持流程。</p>
-          <ul><li>加盟路线已经退出</li><li>仅作历史方法复盘</li></ul>
-          <a href="https://312760175liusheng-ship-it.github.io/qihexiang-toolbox/">查看资料总台 <b>↗</b></a>
-        </article>
-
-        <article class="card historical" data-category="history">
-          <div class="meta"><span class="tag history">历史手册</span><span>09</span></div>
-          <h3>七盒湘总部运营手册</h3>
-          <p>把总部运营资料整理成手机可查知识库，保留培训和运营结构参考。</p>
-          <ul><li>不再作为当前执行手册</li><li>内容可能随总部变化而过期</li></ul>
-          <a href="https://312760175liusheng-ship-it.github.io/qihex-ops-manual/">查看运营手册 <b>↗</b></a>
-        </article>
-
-        <article class="card historical" data-category="history">
-          <div class="meta"><span class="tag history">历史工具</span><span>10</span></div>
-          <h3>推广运营培训助手</h3>
-          <p>原七盒湘培训现场提问、记录和推广运营学习工具。</p>
-          <ul><li>不代表继续加盟</li><li>保留训练工具价值</li></ul>
-          <a href="https://312760175liusheng-ship-it.github.io/liuzhou-promotion-coach/">查看培训助手 <b>↗</b></a>
+        <article class="resource-card historical" data-category="history" data-name="推广运营培训助手" data-keywords="七盒湘 推广 运营 培训 助手 柳州">
+          <div class="meta"><span class="tag history">历史工具</span><button class="favorite" type="button" aria-label="收藏推广运营培训助手">☆</button></div>
+          <h3>推广运营培训助手</h3><p>原培训现场提问、记录与推广运营学习工具。</p>
+          <a href="https://312760175liusheng-ship-it.github.io/liuzhou-promotion-coach/" data-track="推广运营培训助手">查看 <b>↗</b></a>
         </article>
       </div>
+      <p id="no-results" class="no-results" hidden>没有找到匹配资料，换一个关键词试试。</p>
     </section>
 
     <section class="risk">
-      <div>
-        <p class="eyebrow">PUBLIC EXPOSURE WARNING</p>
-        <h2>有些页面写着“私有”，实际并不私有。</h2>
-      </div>
-      <div>
-        <p>餐饮作战总台及其考察、筹备页面，以及七盒湘谈判对峙清单，当前均能通过互联网直接访问。它们没有加入本公开导航，避免进一步放大。</p>
-        <p>“不收录”不等于已经下线。后续仍需单独决定：转私有、停止Pages、脱敏后公开或继续留档。</p>
-      </div>
+      <div><p class="eyebrow">公开风险</p><h2>写着“私有”，不等于真正私有。</h2></div>
+      <div><p>餐饮作战总台及谈判对峙清单仍可通过互联网访问，但没有加入本公开导航。后续应单独决定转私有、停止Pages或脱敏。</p></div>
     </section>
   </main>
 
-  <footer>
-    <strong>柳生网页工具与资料中心</strong>
-    <p>最后核验：2026-07-28 · 当前与历史分开，公开与敏感分开。</p>
-  </footer>
+  <footer><strong>柳生工作台</strong><p>当前与历史分开，行动入口优先于资料陈列。</p></footer>
   <script src="script.js"></script>
 </body>
 </html>
